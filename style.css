@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+}
+
+hr {
+    background-color: black;
+    width: 150px;
+    height: 1px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    height: 60px;
+    width: 60px;
+    border: black 2px solid;
+    text-align: center;
+    font-size: 30px;
+}
+
+button {
+    margin-top: 5px;
+    border-radius: 5px;
+}
