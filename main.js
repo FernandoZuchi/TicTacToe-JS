@@ -3,6 +3,8 @@ let jogada = "O";
 let msg = document.querySelector("p");
 let reset = document.querySelector("button");
 
+// Lógica
+
 bloco.forEach(casa => {
     casa.addEventListener('click', event => {
         // Lógica para realizar uma jogada
