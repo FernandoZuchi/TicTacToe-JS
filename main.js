@@ -23,6 +23,7 @@ bloco.forEach(casa => {
 reset.addEventListener('click', event => {
     bloco.forEach(casa => {
         casa.innerText = "";
+        msg.innerText = `Próximo a jogar: ${jogada}`;
     });
 });
 
