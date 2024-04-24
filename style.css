@@ -1,26 +1,117 @@
+/* Definições gerais */
 body {
-    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte principal */
+    background-color: #f9f9f9; /* Define a cor de fundo do corpo */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove os preenchimentos padrão */
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    height: 100vh; /* Define a altura total da viewport */
 }
 
-hr {
-    background-color: black;
-    width: 150px;
-    height: 1px;
+/* Container principal */
+.container {
+    max-width: 600px; /* Define a largura máxima do container */
+    width: 100%; /* Define a largura total do container */
 }
 
+/* Painel do jogo */
+.panel {
+    background-color: #fff; /* Cor de fundo do painel */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 40px; /* Espaçamento interno */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra */
+    animation: fadeIn 0.5s ease forwards; /* Animação de fade-in */
+    text-align: center; /* Centraliza horizontalmente o conteúdo */
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Inicia com opacidade 0 */
+        transform: translateY(-20px); /* Translação para cima */
+    }
+    to {
+        opacity: 1; /* Termina com opacidade 1 */
+        transform: translateY(0); /* Sem translação */
+    }
+}
+
+/* Estilo do título */
+h1 {
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    font-weight: 600; /* Peso da fonte */
+    font-size: 2.5em; /* Tamanho da fonte */
+}
+
+/* Estilo da tabela */
 table {
-    margin: 0 auto;
+    margin: 20px auto; /* Centraliza horizontalmente a tabela */
+    border-collapse: collapse; /* Remove espaços entre as células */
 }
 
+/* Estilo das células da tabela */
 td {
-    height: 60px;
-    width: 60px;
-    border: black 2px solid;
-    text-align: center;
-    font-size: 30px;
+    width: 100px; /* Largura das células */
+    height: 100px; /* Altura das células */
+    border: 2px solid #333; /* Borda das células */
+    font-size: 3em; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    cursor: pointer; /* Mostra que as células são clicáveis */
+    transition: all 0.3s ease; /* Transição suave */
 }
 
-button {
-    margin-top: 5px;
-    border-radius: 5px;
+/* Efeito de hover nas células */
+td:hover {
+    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
 }
+
+/* Estilo do texto */
+p {
+    font-size: 1.5em; /* Tamanho da fonte */
+    color: #666; /* Cor do texto */
+    margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+/* Container do botão */
+.button-container {
+    text-align: center; /* Centraliza horizontalmente o botão */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilo do botão */
+button {
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 1.2em; /* Tamanho da fonte */
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Mostra que o botão é clicável */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilização do plano de fundo */
+.container::before {
+    content: ''; /* Adiciona um conteúdo antes do container */
+    position: absolute; /* Posição absoluta */
+    top: 0; /* Alinhado ao topo */
+    left: 0; /* Alinhado à esquerda */
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    background-image: linear-gradient(to bottom right, #00c6ff, #0072ff); /* Gradiente de cores */
+    opacity: 0.1; /* Opacidade */
+    z-index: -1; /* Coloca atrás de todos os outros elementos */
+    border-radius: 20px; /* Bordas arredondadas */
+}
+
+
+
