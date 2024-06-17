@@ -1,7 +1,6 @@
-# relogio
+# Jogo da Velha
 
-Explicação do código JS:
-
+Como vamos utilizar a linguagem?
 Vamos utilizar javascript DOM para manipular e criar lógica por trás de um jogo da velha em HTML, CSS
 
 ## Código HTML
